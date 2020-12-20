@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import sanityClient from '../client';
 import imageUrlBuilder from '@sanity/image-url';
 import { SanityImageSource } from '@sanity/image-url/lib/types/types';
-import BlockContent from '@sanity/block-content-to-react';
+
 interface IAuthor {
   name: string;
   bio: string;
