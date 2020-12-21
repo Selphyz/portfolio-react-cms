@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import imageUrlBuilder from '@sanity/image-url';
 import { SanityImageSource } from '@sanity/image-url/lib/types/types';
+import BlockContent from '@sanity/block-content-to-react';
 import sanityClient from '../client';
 interface ISinglePost {
   title: string;
@@ -31,26 +32,27 @@ const SinglePost = () => {
     sanityClient
       .fetch(
         `*[slug.current == "${slug}"]{
-      title,
-      _id,
-      slug,
-      mainImage{
-        asset->{
+          title,
           _id,
-          url
-        }
-      },
-      body,
-      "name": author->name,
-      "authorImage": author->image
-    }`,
+          slug,
+          mainImage{
+            asset->{
+              _id,
+              url
+            }
+          },
+          body,
+          "name": author->name,
+          "authorImage": author->image
+        }`,
       )
       .then((data) => setSinglePost(data[0]))
       .catch(console.error);
   }, [slug]);
   if (!singlePost) {
-    return <div>Post not found</div>;
+    return <div>Loading...</div>;
   }
+
   return (
     <main className='bg-gray-200 min-h-screen p-12'>
       <article className='container shadow-lg mx-auto bg-green-100 rounded-lg'>
@@ -80,7 +82,7 @@ const SinglePost = () => {
           />
         </header>
         <div className='px-16 lg:px-48 py-12 lg:py-20 prose lg:prose-xl max-w-full'>
-          <p>{singlePost.body}</p>
+          <BlockContent blocks={singlePost.body} projectId='r99w5jgb' dataset='production' />
         </div>
       </article>
     </main>
