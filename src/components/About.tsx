@@ -33,7 +33,7 @@ const About = () => {
     <main className='relative'>
       <div className='p-10 lg:pt-48 container mx-auto relative'>
         {
-          <section className='bg-blue-300 rounded-lg shadow-2xl lg:flex p-20'>
+          <section className='bg-blue-400 rounded-lg shadow-2xl lg:flex p-20'>
             <img
               src={
                 urlFor(author.authorImage).url()

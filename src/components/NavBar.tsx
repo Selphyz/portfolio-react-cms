@@ -5,7 +5,7 @@ import '../style/NavBar.scss';
 
 const NavBar = () => {
   return (
-    <header className='bg-gradient-to-t from-blue-100 to-blue-400'>
+    <header className='bg-gradient-to-t from-blue-100 to-blue-600'>
       <div className='container mx-auto flex justify-between'>
         <nav className='flex'>
           <NavLink
