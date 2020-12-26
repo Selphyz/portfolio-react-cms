@@ -2,6 +2,7 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 import { AiFillLinkedin, AiOutlineBook, AiOutlineGithub } from 'react-icons/ai';
 import '../style/NavBar.scss';
+import { useEffect } from 'react';
 
 const NavBar = () => {
   return (
@@ -44,21 +45,21 @@ const NavBar = () => {
             href='https://portfolio-react-carlos.netlify.app/'
             target='_blank'
             rel='noreferrer'>
-            <AiOutlineBook size='40' />
+            <AiOutlineBook size='40' id='cv' title='Curriculum' />
           </a>
           <a
             className='transform hover:scale-110 px-1 text-blue-700 hover:shadow'
             href='https://www.linkedin.com/in/carlos-dominguez-puig/'
             target='_blank'
             rel='noreferrer'>
-            <AiFillLinkedin size='40' />
+            <AiFillLinkedin size='40' id='linkedin' title='Perfil de Linkedin' />
           </a>
           <a
             className='transform hover:scale-110 px-1 hover:shadow'
             href='https://github.com/Selphyz'
             target='_blank'
             rel='noreferrer'>
-            <AiOutlineGithub size='40' />
+            <AiOutlineGithub size='40' id='github' title='Perfil de Github' />
           </a>
         </div>
       </div>
