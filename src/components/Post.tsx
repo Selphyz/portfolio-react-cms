@@ -45,14 +45,14 @@ const Post = () => {
             postData.map((post: IPost, index: number) => (
               <article key={post.slug.current}>
                 <Link to={`/post/${post.slug.current}`}>
-                  <span className='block h-64 relative rounded shadow leading-snug bg-white border-l-8 border-green-400'>
+                  <span className='block h-64 relative rounded shadow leading-snug bg-white border-l-8 border-blue-400'>
                     <img
                       src={post.mainImage.asset.url}
                       alt={post.title}
                       className='w-full h-full rounded-r object-cover absolute'
                     />
                     <span className='block relative h-full flex justify-end items-end pr-4 pb-4'>
-                      <h3 className='text-gray-100 text-lg font-blog px-3 py-4 bg-green-300 rounded'>
+                      <h3 className='text-gray-100 text-lg font-blog px-3 py-4 bg-blue-300 rounded'>
                         {post.title}
                       </h3>
                     </span>

@@ -1,0 +1,8 @@
+.post > div > ul > li > a {
+  text-decoration: underline;
+}
+.post > div > ul > li > a:hover {
+  text-decoration: none;
+  font-weight: bold;
+  color: blue;
+}

@@ -4,6 +4,7 @@ import imageUrlBuilder from '@sanity/image-url';
 import { SanityImageSource } from '@sanity/image-url/lib/types/types';
 import BlockContent from '@sanity/block-content-to-react';
 import sanityClient from '../client';
+import '../style/SinglePost.scss';
 interface ISinglePost {
   title: string;
   _id: string;
@@ -81,7 +82,7 @@ const SinglePost = () => {
             style={{ height: '400px' }}
           />
         </header>
-        <div className='px-16 lg:px-48 py-12 lg:py-20 prose lg:prose-xl max-w-full'>
+        <div className='post px-16 lg:px-48 py-12 lg:py-20 prose lg:prose-xl max-w-full'>
           <BlockContent blocks={singlePost.body} projectId='r99w5jgb' dataset='production' />
         </div>
       </article>
