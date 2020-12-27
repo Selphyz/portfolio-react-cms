@@ -12,29 +12,29 @@ const NavBar = () => {
             to='/'
             exact
             activeClassName='bg-blue-500'
-            className='transform transition motion-reduce:transform-none hover:scale-110 duration-500 hover:bg-blue-400 
-            inflex-flex items-center py-6 px-3 my-3 text-red-100 font-bold cursive tracking-widest rounded'>
+            className='nav transform transition motion-reduce:transform-none hover:scale-110 duration-500 hover:bg-blue-400 
+            inflex-flex items-center py-6 px-3 my-3 text-black font-bold cursive tracking-widest rounded'>
             Carlos
           </NavLink>
           <NavLink
             to='/post'
             activeClassName='bg-blue-500'
-            className='transform transition motion-reduce:transform-none hover:scale-110 duration-500 hover:bg-blue-400 
-            inflex-flex items-center py-6 px-3 my-3 text-red-100 font-bold cursive tracking-widest rounded'>
+            className='nav transform transition motion-reduce:transform-none hover:scale-110 duration-500 hover:bg-blue-400 
+            inflex-flex items-center py-6 px-3 my-3 text-black font-bold cursive tracking-widest rounded'>
             Mis posts
           </NavLink>
           <NavLink
             to='/project'
             activeClassName='bg-blue-500'
-            className='transform transition motion-reduce:transform-none hover:scale-110 duration-500 hover:bg-blue-400 
-            inflex-flex items-center py-6 px-3 my-3 text-red-100 font-bold cursive tracking-widest rounded'>
+            className='nav transform transition motion-reduce:transform-none hover:scale-110 duration-500 hover:bg-blue-400 
+            inflex-flex items-center py-6 px-3 my-3 text-black font-bold cursive tracking-widest rounded'>
             Mis Projectos
           </NavLink>
           <NavLink
             to='/about'
             activeClassName='bg-blue-500'
-            className='transform transition motion-reduce:transform-none hover:scale-110 duration-500 hover:bg-blue-400 
-            inflex-flex items-center py-6 px-3 my-3 text-red-100 font-bold cursive tracking-widest rounded'>
+            className='nav transform transition motion-reduce:transform-none hover:scale-110 duration-500 hover:bg-blue-400 
+            inflex-flex items-center py-6 px-3 my-3 text-black font-bold cursive tracking-widest rounded'>
             Sobre Mi
           </NavLink>
         </nav>

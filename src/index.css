@@ -3,15 +3,19 @@
 @tailwind utilities;
 
 @font-face {
-  font-family: 'Simplifica';
-  src: local('Simplifica'), url(./fonts/SIMPLIFICATypeface.ttf) format('truetype');
+  font-family: 'Bodoni';
+  src: local('Bodoni'), url(./fonts/BodoniFLF-Roman.ttf) format('truetype');
 }
 @font-face {
-  font-family: 'Aleo';
-  src: local('Aleo'), url(./fonts/Aleo-Regular.otf) format('opentype');
+  font-family: 'Simple';
+  src: local('Simple'), url(./fonts/SIMPLIFICATypeface.ttf) format('opentype');
+}
+@font-face {
+  font-family: 'RobotoSlab';
+  src: local('RobotoSlab'), url(./fonts/RobotoSlab-VariableFont_wght.ttf) format('truetype');
 }
 * {
-  font-family: 'Aleo', sans-serif;
+  font-family: 'RobotoSlab', sans-serif;
 }
 .prose img {
   margin-left: auto;
@@ -23,5 +27,5 @@
   font-size: 100px;
 }
 .simple {
-  font-family: 'Simplifica', sans-serif;
+  font-family: 'Bodoni', serif;
 }
