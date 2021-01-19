@@ -3,12 +3,12 @@
 @tailwind utilities;
 
 @font-face {
-  font-family: 'Bodoni';
-  src: local('Bodoni'), url(./fonts/BodoniFLF-Roman.ttf) format('truetype');
+  font-family: 'Emberly';
+  src: local('Emberly'), url(./fonts/Emberly-Regular.ttf) format('truetype');
 }
 @font-face {
-  font-family: 'Simple';
-  src: local('Simple'), url(./fonts/SIMPLIFICATypeface.ttf) format('opentype');
+  font-family: 'Montserrat';
+  src: local('Montserrat'), url(./fonts/Montserrat-Regular.ttf) format('opentype');
 }
 @font-face {
   font-family: 'RobotoSlab';
@@ -27,5 +27,5 @@
   font-size: 100px;
 }
 .simple {
-  font-family: 'Bodoni', serif;
+  font-family: 'Emberly', serif;
 }

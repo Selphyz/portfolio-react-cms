@@ -13,28 +13,28 @@ const NavBar = () => {
             exact
             activeClassName='bg-blue-500'
             className='nav transform transition motion-reduce:transform-none hover:scale-110 duration-500 hover:bg-blue-400 
-            inflex-flex items-center py-6 px-3 my-3 text-black font-bold cursive tracking-widest rounded'>
+            inflex-flex items-center py-6 px-3 my-3 text-black cursive tracking-widest rounded font'>
             Carlos
           </NavLink>
           <NavLink
             to='/post'
             activeClassName='bg-blue-500'
             className='nav transform transition motion-reduce:transform-none hover:scale-110 duration-500 hover:bg-blue-400 
-            inflex-flex items-center py-6 px-3 my-3 text-black font-bold cursive tracking-widest rounded'>
+            inflex-flex items-center py-6 px-3 my-3 text-black cursive tracking-widest rounded font'>
             Mis posts
           </NavLink>
           <NavLink
             to='/project'
             activeClassName='bg-blue-500'
             className='nav transform transition motion-reduce:transform-none hover:scale-110 duration-500 hover:bg-blue-400 
-            inflex-flex items-center py-6 px-3 my-3 text-black font-bold cursive tracking-widest rounded'>
+            inflex-flex items-center py-6 px-3 my-3 text-black cursive tracking-widest rounded font'>
             Mis Projectos
           </NavLink>
           <NavLink
             to='/about'
             activeClassName='bg-blue-500'
             className='nav transform transition motion-reduce:transform-none hover:scale-110 duration-500 hover:bg-blue-400 
-            inflex-flex items-center py-6 px-3 my-3 text-black font-bold cursive tracking-widest rounded'>
+            inflex-flex items-center py-6 px-3 my-3 text-black cursive tracking-widest rounded font'>
             Sobre Mi
           </NavLink>
         </nav>

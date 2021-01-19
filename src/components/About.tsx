@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import sanityClient from '../client';
 import imageUrlBuilder from '@sanity/image-url';
 import { SanityImageSource } from '@sanity/image-url/lib/types/types';
+import '../style/About.scss';
 
 interface IAuthor {
   name: string;
@@ -35,19 +36,15 @@ const About = () => {
         {
           <section className='bg-blue-400 rounded-lg shadow-2xl lg:flex p-20'>
             <img
-              src={
-                urlFor(author.authorImage).url()
-                  ? urlFor(author.authorImage).url()
-                  : author.authorImage
-              }
+              src={urlFor(author.authorImage).url() ? urlFor(author.authorImage).url() : author.authorImage}
               alt={author.name}
               className='rounded w-32 h-32 lg:w-64 lg:h-64 mr-8'
             />
             <div className='text-lg flex flex-col justify-center'>
-              <h1 className='cursive text-6xl text-white mb-4 simple'>
-                Hola, me llamo <span className='text-green-100 simple'>{author.name}</span>
+              <h1 className='cursive text-6xl text-white mb-4 simple titulo'>
+                Hola, me llamo <span className='text-green-100 simple titulo'>{author.name}</span>
               </h1>
-              <p className='text-white text-2xl simple'>{author.bio}</p>
+              <p className='text-white text-2xl simple roboto'>{author.bio}</p>
             </div>
           </section>
         }
